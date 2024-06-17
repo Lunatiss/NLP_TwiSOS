@@ -1,6 +1,15 @@
-## TwiSOS: Natural Language Process for Disaster Response: 
+## # NLP TwiSOS: Natural Language Processing for Twitter Sentiment Analysis
 
-### Objective: Analyzed tweets about emergency disasters using NLP techniques like tokenization, lemmatization, word embedding, and sentiment analysis to improve crisis management
+### Objective: Analyzed tweets about emergency disasters using NLP techniques to improve crisis management
+
+## Contents
+- `dataset`: obtained from a Kaggle data set: [LINK](https://www.kaggle.com/competitions/nlp-getting-started)
+- `notebook`: Jupyter Notebooks for data preprocessing, model training, and evaluation.
+
+## Objectives
+- Perform sentiment analysis on tweets related to emergency situations.
+- Develop machine learning models to classify tweets into positive, negative, or neutral sentiments.
+- Provide insights into public sentiment during emergency events for disaster response teams and researchers.
 
 ![Portada](img/7.png)
 
@@ -15,8 +24,7 @@ For this NLP project, the most important thing is that the text column that we w
 
 ### 1. Data Preprocessing
 
-Data preprocessing consists of taking the column that we want to analyze, in this case, it corresponds to the text column containing Disaster Tweets, obtained from a Kaggle data set: [LINK](https://www.kaggle.com/competitions/nlp-getting-started)
-
+Data preprocessing consists of taking the column that we want to analyze, in this case, it corresponds to the text column containing Disaster Tweets. 
 Once we were left with only the column we wanted to analyze we performed a series of steps that helped us prepare the data as needed to perform an NLP.
 
 There are a lot of steps that you can follow for data preprocessing in NLP models, but you have to choose only those you need depending on your analysis.
