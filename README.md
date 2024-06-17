@@ -2,6 +2,8 @@
 
 ### Objective: Analyzed tweets about emergency disasters using NLP techniques like tokenization, lemmatization, word embedding, and sentiment analysis to improve crisis management
 
+![Portada](img/7.png)
+
 ### WHAT IT IS NLP?
 
 NLP is a branch of machine learning that uses algorithms and techniques for computers to effectively understand, interpret and generate human language. 
@@ -11,7 +13,7 @@ For this NLP project, the most important thing is that the text column that we w
 - Data Preprocessing
 - Feature Engineering
 
-### Data Preprocessing
+### 1. Data Preprocessing
 
 Data preprocessing consists of taking the column that we want to analyze, in this case, it corresponds to the text column containing Disaster Tweets, obtained from a Kaggle data set: [LINK](https://www.kaggle.com/competitions/nlp-getting-started)
 
@@ -35,29 +37,30 @@ We used:
 
 We applied these preprocessing steps to the 'text' column of our training data.
 
-Now we are going to explain in more depth what each key concept in NLP is:
+## Key concepts for NLP analysis: 
+
+![Result 1](img/1.png)
 
 **Tokenization:** 
-
 Is the process of dividing a text into smaller units, called “tokens”. These tokens can be words, phrases, or even individual characters. It is used to convert text into a structure that can be easily read by a machine.
 
 When you tokenize, you can choose between **sentence tokenization** or **word tokenization**: 
 
-**Sentence Tokenization:** the text is broken down into sentences and that is further broken down into words. The input is given as text or a corpus. The output generates a list of sentences. For example, in the text, `"I love dogs. I have a dog"`, the output is ["I love dogs,” “I have a dog”]
+ - **Sentence Tokenization:** the text is broken down into sentences and that is further broken down into words. The input is given as text or a corpus. The output generates a list of sentences. For example, in the text, `"I love dogs. I have a dog"`, the output is ["I love dogs,” “I have a dog”]
 
-**Word Tokenization:** is the same as sentence tokenization. It is used on words so that individual words are separated as items in a list. For example, in the sentence, "Chennai is humid," the result is ["Chennai,” “is,” “humid”].
+ - **Word Tokenization:** is the same as sentence tokenization. It is used on words so that individual words are separated as items in a list. For example, in the sentence, "Chennai is humid," the result is ["Chennai,” “is,” “humid”].
 
 **Stopword Removal:** is a process that removes common and irrelevant words from a text before analysis. Irrelevant words, also known as stopwords, are words that don’t contribute much meaning to the text and can make analysis difficult. Some common examples of irrelevant words are like ‘after,’ ‘every,’ and ‘I’.
 
 **Lemmatization or Stemming:**
 
-**Stemming:** Stemming applies algorithmic rules to simply extract the root of the derived word. The words produced by this step have no essential meaning, but are simply a bunch of letters put together without affixes. By reducing words to their roots, we can reduce the number of unique words we must process.
+ - **Stemming:** Stemming applies algorithmic rules to simply extract the root of the derived word. The words produced by this step have no essential meaning, but are simply a bunch of letters put together without affixes. By reducing words to their roots, we can reduce the number of unique words we must process.
 
-**Lemmatization:** is similar to stemming but it adds context to bring out the true meaning. It uses a dictionary and morphological analysis to identify the actual root word (lemma) considering context. The lemma is a real word that captures the core meaning ("beauty" for "beautiful").
+ - **Lemmatization:** is similar to stemming but it adds context to bring out the true meaning. It uses a dictionary and morphological analysis to identify the actual root word (lemma) considering context. The lemma is a real word that captures the core meaning ("beauty" for "beautiful").
 
 In this analysis, we only use Lemmatization because we consider that in order to analyze disaster tweets it is necessary to take into account the context of the word and not only its root.
 
-### Feature Engineering
+### 2. Feature Engineering
 
 Is about preparing the data in a way that is most suitable for machine learning algorithms to process and learn from. This involves understanding the data, identifying the relevant features, and transforming them into a format that the model can understand.
 
@@ -80,18 +83,19 @@ To interpret these metrics, consider the following:
 
 Refers to the evaluation of the performance of a predictive model when applying this model to data that it has not seen before. The purpose is to measure how well the model can generalize and make accurate predictions on new data, not present during training.
 
-![Captura de pantalla 2024-05-23 a las 15.14.39.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7a7030ea-65a2-4ae4-9bb3-8bccb7fa2279/55e93274-19b2-4ea9-8c91-445d01ebcc8c/Captura_de_pantalla_2024-05-23_a_las_15.14.39.png)
-
 **Heuristic test:** 
 
 In the context of natural language processing (NLP), testing a model with a different heuristic and then retesting the model can have several implications:
+![Result 2](img/2.png)
 
 **Evaluating the effectiveness of the new heuristic:** By comparing the performance of the model before and after applying the new heuristic, you can evaluate if the heuristic has improved the model's performance. If the model performs better with the new heuristic, it suggests that the heuristic is effective in improving the model's ability to process and understand natural language.
 
 **Identifying potential biases or limitations of the heuristics:** Retesting the model with different heuristics can help uncover potential biases or limitations of the heuristics themselves.
 
-![Captura de Pantalla 2024-05-23 a las 15.48.42.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7a7030ea-65a2-4ae4-9bb3-8bccb7fa2279/55cb2fc3-3bb3-47bf-b7e1-760dadce2a3f/Captura_de_Pantalla_2024-05-23_a_las_15.48.42.png)
+## **Visualizations:**
 
-## **Distribution of Disaster vs. Non-Disaster Tweets**
+![Result 3](img/3.png)
+![Result 3](img/4.png)
+![Result 4](img/5.png)
+![Result 4](img/6.png)
 
-![Captura de Pantalla 2024-05-23 a las 15.48.55.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7a7030ea-65a2-4ae4-9bb3-8bccb7fa2279/d377fc71-b86a-4b3c-837c-0906afd59d83/Captura_de_Pantalla_2024-05-23_a_las_15.48.55.png)
