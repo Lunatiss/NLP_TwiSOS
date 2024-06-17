@@ -1,4 +1,4 @@
-## TwiSOS: NLP for Disaster Response: 
+## TwiSOS: Natural Language Process for Disaster Response: 
 
 ### Objective: Analyzed tweets about emergency disasters using NLP techniques like tokenization, lemmatization, word embedding, and sentiment analysis to improve crisis management
 
